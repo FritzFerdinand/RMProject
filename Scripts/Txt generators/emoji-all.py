@@ -17,6 +17,8 @@ def main():
         print(file)
         print("Total tweets:", count, "\n")
         print("Tweets containing an angry emoji:", angry_count, "\n")
-        print("Per how many tweets a tweet containing an angry emoji occurred:", count/angry_count, "\n")
-        
+        if angry_count != 0:
+            print("Per how many tweets a tweet containing an angry emoji occurred:", count/angry_count, "\n")
+        else:
+            print("No angry tweets found")
 main()

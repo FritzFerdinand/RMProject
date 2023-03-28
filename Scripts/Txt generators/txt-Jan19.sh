@@ -1,0 +1,1 @@
+ssh $1@karora.let.rug.nl 'zless ../../net/corpora/twitter2/Tweets/2019/01/201901{21..28}:*.out.gz | ../../net/corpora/twitter2/tools/tweet2tab -i text' >> 21-28Jan2019.txt || true
